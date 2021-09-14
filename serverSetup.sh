@@ -15,7 +15,7 @@ if is_user_root; then
     apt update
     apt install -y aptitude
     aptitude safe-upgrade -y
-    apt install -y neofetch figlet nmon htop glances mc openssh-server ubuntu-restricted-extras
+    apt install -y neofetch figlet nmon htop glances mc openssh-server ubuntu-restricted-addons
     apt install -y gnome-tweak-tool chrome-gnome-shell
     echo 'Descargando papel tapiz...'
     wget https://github.com/FONDESO/Soporte/raw/main/cdmx-01.jpg
