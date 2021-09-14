@@ -17,15 +17,6 @@ if is_user_root; then
     aptitude safe-upgrade -y
     apt install -y neofetch figlet nmon htop glances mc openssh-server ubuntu-restricted-extras
     apt install -y gnome-tweak-tool gnome-shell-extensions chrome-gnome-shell
-    echo 'habilitando extensiones'
-    su incognia
-    wget https://github.com/FONDESO/Soporte/raw/main/extensions.zip
-    unzip extensions.zip -d ~/.local/share/gnome-shell/extensions
-    gnome-shell-extension-tool enable dash-to-dock@micxgx.gmail.com
-    gnome-shell-extension-tool enable transparentosd@ipaq3870
-    gnome-shell-extension-tool enable TransparentTopbar@enrico.sorio.net
-    gnome-shell-extension-tool enable user-theme@gnome-shell-extensions.gcampax.github.com
-    exit
     echo 'Descargando papel tapiz'
     wget https://github.com/FONDESO/Soporte/raw/main/cdmx-01.jpg
     mv cdmx-01.jpg /usr/share/backgrounds/
@@ -41,5 +32,12 @@ if is_user_root; then
     exit 0
 else
     echo 'Este script debe ejecutarse como root.' >&2
+    echo 'habilitando extensiones'
+    wget https://github.com/FONDESO/Soporte/raw/main/extensions.zip
+    unzip extensions.zip -d ~/.local/share/gnome-shell/extensions
+    gnome-shell-extension-tool enable dash-to-dock@micxgx.gmail.com
+    gnome-shell-extension-tool enable transparentosd@ipaq3870
+    gnome-shell-extension-tool enable TransparentTopbar@enrico.sorio.net
+    gnome-shell-extension-tool enable user-theme@gnome-shell-extensions.gcampax.github.com
     exit 1
 fi
