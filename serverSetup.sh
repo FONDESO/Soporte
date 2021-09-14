@@ -28,6 +28,7 @@ if is_user_root; then
     echo 'Para arrancar nuevamente el ambiente gráfico use:'
     echo 'sudo service gdm3 start'
     sleep 2
+    reset
     echo ' _____ ___  _   _ ____  _____ ____   ___  '
     echo '|  ___/ _ \| \ | |  _ \| ____/ ___| / _ \ '
     echo '| |_ | | | |  \| | | | |  _| \___ \| | | |'
@@ -55,6 +56,7 @@ else
     gnome-shell-extension-tool enable TransparentTopbar@enrico.sorio.net
     gnome-shell-extension-tool enable user-theme@gnome-shell-extensions.gcampax.github.com
     rm extensions.zip
+    reset
     echo ' _____ ___  _   _ ____  _____ ____   ___  '
     echo '|  ___/ _ \| \ | |  _ \| ____/ ___| / _ \ '
     echo '| |_ | | | |  \| | | | |  _| \___ \| | | |'
