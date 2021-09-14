@@ -37,7 +37,7 @@ if is_user_root; then
     echo 'Para arrancarente el ambiente gráfico use:'
     echo 'sudo service gdm3 start'
     sleep 2
-    echo 'Instalación finalizada
+    echo 'Instalación finalizada'
     exit 0
 else
     echo 'Este script debe ejecutarse como root.' >&2
