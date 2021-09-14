@@ -12,7 +12,7 @@ if is_user_root; then
     echo
     echo 'Usuario root detectado, inicia instalación...'
     sleep 2
-    wget https://raw.githubusercontent.com/FONDESO/Soporte/main/banner.txt
+    # wget https://raw.githubusercontent.com/FONDESO/Soporte/main/banner.txt
     apt update
     apt install -y aptitude
     aptitude safe-upgrade -y
@@ -30,9 +30,12 @@ if is_user_root; then
     echo 'sudo service gdm3 start'
     sleep 2
     reset
-    cat banner.txt
+    # cat banner.txt
+    figlet -t "Host :    $(hostname)"
+    figlet -t ________
+    figlet -t "IP :    $(ip -4 addr show enp0s25 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
     echo '¡Instalación finalizada!'
-    rm banner.txt
+    # rm banner.txt
     exit 0
 else
     echo ' _____ ___  _   _ ____  _____ ____   ___  '
@@ -43,7 +46,7 @@ else
     echo
     echo 'Usuario normal detectado, inicia instalación...'
     sleep 2
-    wget https://raw.githubusercontent.com/FONDESO/Soporte/main/banner.txt
+    # wget https://raw.githubusercontent.com/FONDESO/Soporte/main/banner.txt
     echo 'Descargando extensiones...'
     wget https://github.com/FONDESO/Soporte/raw/main/extensions.zip
     unzip extensions.zip -d ~/.local/share/gnome-shell/extensions
@@ -57,8 +60,11 @@ else
     wget https://github.com/FONDESO/Soporte/raw/main/CDMX-avatar.png
     mv CDMX-avatar.png ~/Imágenes/
     reset
-    cat banner.txt
+    # cat banner.txt
+    figlet -t "Host :    $(hostname)"
+    figlet -t ________
+    figlet -t "IP :    $(ip -4 addr show enp0s25 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
     echo '¡Instalación finalizada!'
-    rm banner.txt
+    # rm banner.txt
     exit 1
 fi
