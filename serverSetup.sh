@@ -35,7 +35,7 @@ if is_user_root; then
     echo '|  _|| |_| | |\  | |_| | |___ ___) | |_| |'
     echo '|_|   \___/|_| \_|____/|_____|____/ \___/ '
     echo
-    echo 'Instalación finalizada'
+    echo '¡Instalación finalizada!'
     exit 0
 else
     echo ' _____ ___  _   _ ____  _____ ____   ___  '
@@ -63,6 +63,6 @@ else
     echo '|  _|| |_| | |\  | |_| | |___ ___) | |_| |'
     echo '|_|   \___/|_| \_|____/|_____|____/ \___/ '
     echo
-    echo 'Instalación finalizada'
+    echo '¡Instalación finalizada!'
     exit 1
 fi
