@@ -12,6 +12,7 @@ if is_user_root; then
     echo
     echo 'Usuario root detectado, inicia instalación...'
     sleep 2
+    wget https://raw.githubusercontent.com/FONDESO/Soporte/main/banner.txt
     apt update
     apt install -y aptitude
     aptitude safe-upgrade -y
@@ -29,13 +30,9 @@ if is_user_root; then
     echo 'sudo service gdm3 start'
     sleep 2
     reset
-    echo ' _____ ___  _   _ ____  _____ ____   ___  '
-    echo '|  ___/ _ \| \ | |  _ \| ____/ ___| / _ \ '
-    echo '| |_ | | | |  \| | | | |  _| \___ \| | | |'
-    echo '|  _|| |_| | |\  | |_| | |___ ___) | |_| |'
-    echo '|_|   \___/|_| \_|____/|_____|____/ \___/ '
-    echo
+    cat banner.txt
     echo '¡Instalación finalizada!'
+    rm banner.txt
     exit 0
 else
     echo ' _____ ___  _   _ ____  _____ ____   ___  '
@@ -46,6 +43,7 @@ else
     echo
     echo 'Usuario normal detectado, inicia instalación...'
     sleep 2
+    wget https://raw.githubusercontent.com/FONDESO/Soporte/main/banner.txt
     echo 'Descargando extensiones...'
     wget https://github.com/FONDESO/Soporte/raw/main/extensions.zip
     unzip extensions.zip -d ~/.local/share/gnome-shell/extensions
@@ -59,12 +57,8 @@ else
     wget https://github.com/FONDESO/Soporte/raw/main/CDMX-avatar.png
     mv CDMX-avatar.png ~/Imágenes/
     reset
-    echo ' _____ ___  _   _ ____  _____ ____   ___  '
-    echo '|  ___/ _ \| \ | |  _ \| ____/ ___| / _ \ '
-    echo '| |_ | | | |  \| | | | |  _| \___ \| | | |'
-    echo '|  _|| |_| | |\  | |_| | |___ ___) | |_| |'
-    echo '|_|   \___/|_| \_|____/|_____|____/ \___/ '
-    echo
+    cat banner.txt
     echo '¡Instalación finalizada!'
+    rm banner.txt
     exit 1
 fi
