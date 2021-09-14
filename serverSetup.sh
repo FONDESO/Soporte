@@ -32,7 +32,6 @@ if is_user_root; then
     reset
     # cat banner.txt
     figlet -t "Host :    $(hostname)"
-    figlet -t ________
     figlet -t "IP :    $(ip -4 addr show enp0s25 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
     echo '¡Instalación finalizada!'
     # rm banner.txt
@@ -62,7 +61,6 @@ else
     reset
     # cat banner.txt
     figlet -t "Host :    $(hostname)"
-    figlet -t ________
     figlet -t "IP :    $(ip -4 addr show enp0s25 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
     echo '¡Instalación finalizada!'
     # rm banner.txt
