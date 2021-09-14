@@ -16,7 +16,7 @@ if is_user_root; then
     apt install -y aptitude
     aptitude safe-upgrade -y
     apt install -y neofetch figlet nmon htop glances mc openssh-server ubuntu-restricted-addons
-    apt install -y gnome-tweak-tool chrome-gnome-shell
+    apt install -y gparted gnome-tweak-tool chrome-gnome-shell
     echo 'Descargando papel tapiz...'
     wget https://github.com/FONDESO/Soporte/raw/main/cdmx-01.jpg
     mv cdmx-01.jpg /usr/share/backgrounds/
@@ -56,6 +56,8 @@ else
     gnome-shell-extension-tool enable TransparentTopbar@enrico.sorio.net
     gnome-shell-extension-tool enable user-theme@gnome-shell-extensions.gcampax.github.com
     rm extensions.zip
+    wget https://github.com/FONDESO/Soporte/raw/main/CDMX-avatar.png
+    mv CDMX-avatar.png ~/Imágenes/
     reset
     echo ' _____ ___  _   _ ____  _____ ____   ___  '
     echo '|  ___/ _ \| \ | |  _ \| ____/ ___| / _ \ '
