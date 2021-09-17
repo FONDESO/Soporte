@@ -3,4 +3,4 @@
 ## J. U. D. de Programación e Informática
 ### Repositorio de utilerías y scripts
 
-Este repositorio cuenta con scripts en compatibles con la norma POSIX (Bash, Zsh) así como PowerShell y Python para gestionar y automatizar tareas de instalación y configuración en los sistemas operativos: Windows, GNU/Linux y macOS.
+Este repositorio cuenta con scripts compatibles con la norma POSIX (Bash, Zsh) así como PowerShell y Python para gestionar y automatizar tareas de instalación y configuración en los sistemas operativos: Windows, GNU/Linux y macOS.
