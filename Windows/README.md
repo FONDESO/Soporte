@@ -1,5 +1,4 @@
 ![Encabezado](https://raw.githubusercontent.com/FONDESO/IdentidadGrafica/main/PNG/encabezado75.png)
-# Dirección de Planeación
 
 Windows 11 Clean Setup
 ======================
