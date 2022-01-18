@@ -63,7 +63,7 @@ $apps=@(
     "microsoft.windowscommunicationsapps"
     # "Microsoft.ScreenSketch"
     # "Microsoft.Paint"
-    "Microsoft.Windows.Photos"
+    # "Microsoft.Windows.Photos"
     "Microsoft.WindowsCamera"
     # "Microsoft.WindowsNotepad"
     # "Microsoft.WindowsStore"
